@@ -47,6 +47,12 @@ The `metadata.csv` file will include the following columns:
 - **Recording Conditions:** Participants were encouraged to record in their natural environments to reflect real-world conditions (background noise, varying sound levels).
 - **Data Anonymization:** All recordings and metadata is anonymized to protect participant privacy.
 
+## License
+
+This dataset is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+
+You are free to share, remix, and build upon the dataset for any purpose, even commercially, as long as you provide proper attribution.
+
 ## Contact Information
 For any questions or further information, please contact:
 
