@@ -1,51 +1,57 @@
 # Speech Recognition Bias Reduction Project
 
 ## Overview
-Welcome to the Speech Recognition Bias Reduction Project! My data collection project aims to build a more inclusive and representative dataset to improve the accuracy of automated speech recognition systems, particularly for speakers with non-native English accents. Through this data collection, I seek to address the challenges I faced when I first moved to the US in 2024 when interacting with automated voice systems that often misinterpret alphanumeric information, leading to delays and ineffective communication.
+Welcome to the Speech Recognition Bias Reduction Project. It aims to create a more inclusive and representative dataset for improving automated speech recognition systems. This project addresses the challenges faced by speakers with non-native English accents, particularly when interacting with automated voice systems that struggle to interpret alphanumeric information such as names, phone numbers, and addresses.
+
+Motivated by my personal experience as an international student moving to the United States in 2024, I aim to reduce delays, misinterpretations, and ineffective communication caused by accent-based biases in current voice recognition technologies.
+
 
 ## Objective
-The primary goal of this project is to create a diverse dataset of alphanumeric audio inputs. This dataset will focus on audio recordings from speakers with various accents, starting with the vibrant community of international students at Duke University.
+The primary goal is to create a diverse dataset of alphanumeric audio inputs. This dataset will focus on audio recordings from speakers with various accents, starting with the vibrant community of international students at Duke University.
 
-## Dataset Description
+It aims to tackle - <br>
+Dataset Bias: Reduce native English bias and make voice recognition systems more inclusive. <br>
+Efficiency/Equality: In a multicultural society, ensuring equality in access to services is crucial. 
 
-### Data Collection
-Participants will record themselves spelling out:
-- **Full Names:** Participants will clearly spell out randomly generated or chosen full names (e.g., “J-O-H-N D-O-E”).
-- **Phone Numbers:** Participants will read out randomly generated phone numbers digit by digit (e.g., “Five, Five, Five, One, Two, Three, Four”).
-- **Addresses:** Participants will recite randomized addresses, including street numbers, names, and cities (e.g., “One, Two, Three, Maple Street, Durham”).
+## Potential Applications
+- **Improving Voice Recognition:** Make speech systems better at understanding accents, especially when it comes to things like spelling out names or reading phone numbers.
+- **Reducing Bias in AI:** Help make voice recognition tech more inclusive by reducing bias against non-native English speakers.
+- **Linguistic Insights:** Provide data to understand how different accents impact the way people say things like phone numbers and addresses.
+- **Language Learning & Accessibility:** Support tools for language learners or accessibility projects, helping AI understand a wider range of speech patterns.
 
-In addition to the audio recordings, participants will provide metadata, including:
-- Age
-- Gender
-- Familiarity with English
-- Native language
-- Accent strength (self-reported)
 
-### Unique Aspects of the Dataset
+## Review of Previous Datasets
+Existing audio datasets primarily focus on word and sentence data to enhance representation of diverse accents: [Common Voice](https://commonvoice.mozilla.org/en?gad_source=1&gclid=Cj0KCQjw3bm3BhDJARIsAKnHoVXoYNubJdN3ST0gi3Qc0Q3im_G9C_ZPuhimJ527Vd2Q1Ixr2FrzaBMaAlXsEALw_wcB), [VoxCeleb](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/), [LibriSpeech](https://www.openslr.org/12). Datasets focusing on “Phonetics” are
+
+-	https://catalog.ldc.upenn.edu/LDC93S1: Focuses on American English dialects, which may not adequately represent non-native speakers.
+-	https://archive.phonetics.ucla.edu/: An extensive archive that could be utilized to up sample the collected data.
+-	https://en.arabicspeechcorpus.com/ : Valuable for Arabic language processing, but it doesn’t address English accents.
+-	https://github.com/S-Malek/PCVC: focuses on Modern Persian speech, lacking relevance for English accents.
+
+## Novelty
 - **Focus on Alphanumeric Data:** The dataset specifically targets the recognition of letters and numbers, critical for automated systems that handle personal information.
 - **Diverse Accent Representation:** The dataset will prioritize non-native English speakers, enabling a nuanced understanding of how various accents influence recognition accuracy.
 - **Rich Metadata:** Detailed demographic information allows for in-depth analysis and helps identify patterns in recognition challenges faced by different accent groups.
 
-### Metadata File Structure
-The `metadata.csv` file will include the following columns:
+## Dataset Description and Collection Protocol / Tools Used
+Please refer `docs/collection_protocol.md` and `docs/dataset_description.md`.
 
-| Column                   | Description                                                          |
-|-------------------------|----------------------------------------------------------------------|
-| participant_id          | Unique identifier for each participant                                |
-| age                     | Participant's age                                                    |
-| gender                  | Participant's gender                                                 |
-| native_language         | Participant's native language                                        |
-| english_familiarity     | Level of familiarity with English                                    |
-| accent_strength         | Self-reported accent strength (1 to 10)                             |                                 |
-| experience_difficulty   | Yes/No answer if they faced difficulties with automated systems      |
+## Power Analysis
+![Power Analysis Results](assets/power_analysis.png)
+The calculated sample size is approximately **36 participants per group**.
 
-## Data Collection Protocol
-- **IRB Review:** Approved through Duke University - IRB review to ensure ethical compliance.
-- **Participant Recruitment:** Participants are from Duke University and were recruited through email lists, student groups, and social media platforms, ensuring a diverse representation.
-- **Informed Consent:** Participants consent to the use of their recordings and demographic information through a survey tick box.
-- **Recording Platform:** Audio recordings were collected using the Qualtrics Survey App, accessible on various devices (laptop, phone).
-- **Recording Conditions:** Participants were encouraged to record in their natural environments to reflect real-world conditions (background noise, varying sound levels).
-- **Data Anonymization:** All recordings and metadata is anonymized to protect participant privacy.
+
+## Exploratory Data Analysis
+
+## Ethics Statement
+The Alphanumeric Audio Dataset was collected with strict adherence to ethical guidelines:
+
+1. **Informed Consent:** Participants were fully informed about the purpose and use of their contributions, with consent obtained before participation.
+2. **Anonymization:** All data was anonymized to protect participant privacy, with only non-identifiable metadata included for analysis.
+3. **IRB Approval:** The study was reviewed and approved by Duke University's Institutional Review Board (IRB) to ensure compliance with ethical research standards.
+4. **Voluntary Participation:** Participation was voluntary, and participants could withdraw their data before public release.
+5. **Responsible Use:** The dataset is open-sourced to promote inclusivity in AI research and must be used for ethical, non-discriminatory purposes.
+
 
 ## License
 
