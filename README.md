@@ -55,9 +55,10 @@ The Alphanumeric Audio Dataset was collected with strict adherence to ethical gu
 
 ## License
 
-This dataset is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+This dataset is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
-You are free to share, remix, and build upon the dataset for any purpose, even commercially, as long as you provide proper attribution.
+You are free to use, modify, and distribute this dataset for any purpose, including commercially, as long as you include the original copyright notice in all copies or substantial portions of the dataset. The dataset is provided "as is", without warranty of any kind.
+
 
 ## Contact Information
 For any questions or further information, please contact:
