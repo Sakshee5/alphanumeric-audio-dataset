@@ -40,8 +40,28 @@ Please refer `docs/collection_protocol.md` and `docs/dataset_description.md`.
 ![Power Analysis Results](assets/power_analysis.png)
 The calculated sample size is approximately **36 participants per group**.
 
+For Group 1, there are 55 data points fulfilling the power analysis expectation. However for Group 2, the data falls short of 29 participants.
+
 
 ## Exploratory Data Analysis
+The age distribution of participants skews towards the 20–30 age range, reflecting the demographic characteristics of the survey population, which predominantly consists of university students. However, this limited range does introduce age representation bias.
+
+![Power Analysis Results](assets/age_distribution.png)
+
+The gender distribution in the dataset is balanced ensuring that models trained on the dataset can generalize reasonably well across genders.
+![Power Analysis Results](assets/gender_distribution.png)
+
+Both nationality and native language distributions reveal noticeable representation bias. A substantial proportion of participants hail from India, likely due to the my community access. This concentration also results in overrepresentation of Hindi (India's national language) and Marathi (my native language). This bias limits the diversity of accents in the dataset. Future users of the dataset may need to augment or balance the data to achieve more equitable representation of accents and linguistic backgrounds.
+![Power Analysis Results](assets/nationality_distribution.png)
+![Power Analysis Results](assets/native_language_distribution.png)
+
+Despite the class imbalance in the "Familiarity with English" distribution, it effectively captures the necessary data for the intended study, with each group represented. The imbalance is likely a cascading effect of the nationality distribution, as the majority of participants are Indian students who are typically educated in English alongside their native language.
+![Power Analysis Results](assets/familiarity_with_eng.png)
+
+### Survey Completion Insights
+The average time to complete the survey was approximately 5.9 minutes, indicating that the process was relatively streamlined. However, platform limitations in Qualtrics, which lacks native audio recording capabilities, required participants to record and upload files separately. This additional effort likely contributed to lower participation rates, demonstrating the importance of minimizing participant burden in data collection to improve response rates.
+ 
+![Power Analysis Results](assets/recording_distribution.png)
 
 ## Ethics Statement
 The Alphanumeric Audio Dataset was collected with strict adherence to ethical guidelines:
@@ -66,6 +86,8 @@ For any questions or further information, please contact:
 **Sakshee Patil**  
 Email: [sakshee.patil@duke.edu](mailto:sakshee.patil@duke.edu)
 
-**Advisor: Dr. Brinnae Bent**  
-Email: [brinnae.bent@duke.edu](mailto:brinnae.bent@duke.edu)
+
+** Few Section of the README are re-articulated using ChatGPT.
+
+
 
