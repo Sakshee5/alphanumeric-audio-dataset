@@ -49,13 +49,16 @@ The age distribution of participants skews towards the 20–30 age range, reflec
 ![Power Analysis Results](assets/age_distribution.png)
 
 The gender distribution in the dataset is balanced ensuring that models trained on the dataset can generalize reasonably well across genders.
+
 ![Power Analysis Results](assets/gender_distribution.png)
 
 Both nationality and native language distributions reveal noticeable representation bias. A substantial proportion of participants hail from India, likely due to the my community access. This concentration also results in overrepresentation of Hindi (India's national language) and Marathi (my native language). This bias limits the diversity of accents in the dataset. Future users of the dataset may need to augment or balance the data to achieve more equitable representation of accents and linguistic backgrounds.
+
 ![Power Analysis Results](assets/nationality_distribution.png)
 ![Power Analysis Results](assets/native_language_distribution.png)
 
 Despite the class imbalance in the "Familiarity with English" distribution, it effectively captures the necessary data for the intended study, with each group represented. The imbalance is likely a cascading effect of the nationality distribution, as the majority of participants are Indian students who are typically educated in English alongside their native language.
+
 ![Power Analysis Results](assets/familiarity_with_eng.png)
 
 ### Survey Completion Insights
