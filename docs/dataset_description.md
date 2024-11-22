@@ -13,17 +13,21 @@ The dataset includes audio recordings of participants spelling out a randomized 
 ## 2. Metadata
 The accompanying metadata file `metadata.csv` contains essential information about each participant. The columns in the metadata file include:
 
-| Column Name                    | Description                                                                                     |
-|--------------------------------|-------------------------------------------------------------------------------------------------|
-| Participant_ID                 | Unique identifier for each participant.                                                         |
-| Age                            | Age of the participant in years.                                                               |
-| Gender                         | Gender of the participant (e.g., Male, Female, Non-binary).                                   |
-| Nationality                    | Participant's nationality.                                                                      |
-| Native_Language                | The language the participant primarily speaks.                                                  |
-| Familiarity_with_English       | Self-reported level of familiarity with English (e.g., beginner, intermediate, fluent).       |
-| Accent_Strength                | Self-reported strength of the participant's accent on a scale from 1 (no noticeable accent) to 10 (very strong accent). |
-| Recording_Environment          | Description of the environment in which the audio was recorded (e.g., indoors, outdoors).     |
-| Audio_Files                   | List of audio files corresponding to the participant's recordings (e.g., name_spellout.wav).  |
+| Column Name                | Description                                                                                           |
+|----------------------------|-------------------------------------------------------------------------------------------------------|
+| **Response_ID**            | Unique identifier for each participant's response.                                                   |                                                             |
+| **Age**                    | Age of the participant in years.                                                                     |
+| **Gender**                 | Gender of the participant (e.g., Male, Female, Non-binary).                                          |
+| **Nationality**            | Participant's nationality.                                                                           |
+| **Native_Language**        | The language the participant primarily speaks.                                                       |
+| **Familiarity_with_English** | Self-reported level of familiarity with English       |
+| **Accent_Strength**        | Self-reported strength of the participant's accent on a scale from 0 (no noticeable accent) to 10.   |
+| **Difficulties**           | Self-reported frequency of difficulty with automated systems |
+| **Recording_Machine**      | Device used by the participant for recording (e.g., phone recorder, external microphone).            |
+| **Name**                   | Name recorded by the participant.                                                                             |
+| **Number**                 | Number recorded by the participant.                                                                     |
+| **Address**                | Address recorded by the participant.                                                                |
+| **Duration_secs**          | Time it took to complete the survey.                                                                |
 
 ## 3. Significance of the Dataset
 The dataset is crucial for:
