@@ -10,14 +10,15 @@ The dataset includes audio recordings of participants spelling out a randomized 
 - `audio_data/Numbers`: Audio of participants reading out a randomized phone number digit by digit.
 - `audio_data/Addresses`: Audio of participants stating randomized address clearly.
 
-The folders contain raw audio files in multiple formats, such as .wav, .mp3, and .m4a. Each participant is assigned a unique file_name, which corresponds to three specific file names in the above folders. The ground truth data, including participant names, phone numbers, and addresses, is stored in the metadata.csv file.
+The folders contain raw audio files (.wav). Each participant is assigned a unique file_name, which corresponds to three specific file names in the above folders. The ground truth data, including participant names, phone numbers, and addresses, is stored in the metadata.csv file.
 
 ## 2. Metadata
 The accompanying metadata file `metadata.csv` contains essential information about each participant. The columns in the metadata file include:
 
 | Column Name                | Description                                                                                           |
 |----------------------------|-------------------------------------------------------------------------------------------------------|
-| **file_name**            | Unique identifier for each participant's response.                                                   |                                                             |
+| **Response_ID**            | Unique identifier for each participant's response.  
+| **file_name**              | Local file path for hugging face dataset upload compatibility.                                           |                                                             |
 | **Age**                    | Age of the participant in years.                                                                     |
 | **Gender**                 | Gender of the participant (e.g., Male, Female, Non-binary).                                          |
 | **Nationality**            | Participant's nationality.                                                                           |
