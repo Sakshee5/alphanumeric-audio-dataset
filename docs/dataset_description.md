@@ -21,11 +21,11 @@ The accompanying metadata file `metadata.csv` contains essential information abo
 | **Age**                    | Age of the participant in years.                                                                     |
 | **Gender**                 | Gender of the participant (e.g., Male, Female, Non-binary).                                          |
 | **Nationality**            | Participant's nationality.                                                                           |
-| **Native_Language**        | The language the participant primarily speaks.                                                       |
-| **Familiarity_with_English** | Self-reported level of familiarity with English       |
-| **Accent_Strength**        | Self-reported strength of the participant's accent on a scale from 0 (no noticeable accent) to 10.   |
+| **Native Language**        | The language the participant primarily speaks.                                                       |
+| **Familiarity with English** | Self-reported level of familiarity with English       |
+| **Accent Strength (Self reported)**        | Self-reported strength of the participant's accent on a scale from 0 (no noticeable accent) to 10.   |
 | **Difficulties**           | Self-reported frequency of difficulty with automated systems |
-| **Recording_Machine**      | Device used by the participant for recording (e.g., phone recorder, external microphone).            |
+| **Recording Machine**      | Device used by the participant for recording (e.g., phone recorder, external microphone).            |
 | **Name**                   | Name recorded by the participant.                                                                             |
 | **Number**                 | Number recorded by the participant.                                                                     |
 | **Address**                | Address recorded by the participant.                                                                |
