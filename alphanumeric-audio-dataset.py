@@ -5,13 +5,13 @@ from datasets import Dataset, Audio
 # Define supported audio file extensions
 SUPPORTED_EXTENSIONS = [".wav", ".mp3", ".m4a"]
 
-def find_audio_file(folder, response_id):
+def find_audio_file(folder, file_name_id):
     """
     Finds the audio file in the specified folder for a given response ID, 
     checking all supported extensions.
     """
     for ext in SUPPORTED_EXTENSIONS:
-        audio_path = os.path.join(folder, f"{response_id}{ext}")
+        audio_path = os.path.join(folder, f"{file_name_id}{ext}")
         if os.path.exists(audio_path):
             return audio_path
     return None
@@ -25,7 +25,7 @@ def generate_dataset_dict(metadata, audio_folder):
     Generate the dataset dictionary by mapping metadata to corresponding audio files.
     """
     data = {
-        "response_id": [],
+        "file_name_id": [],
         "audio": [],
         "text": [],
         "age": [],
@@ -39,16 +39,16 @@ def generate_dataset_dict(metadata, audio_folder):
     }
     
     for _, row in metadata.iterrows():
-        response_id = row["Response_ID"]
+        file_name_id = row["file_name"]
         
         # Collect audio paths for different categories
-        name_audio_path = find_audio_file(os.path.join(audio_folder, "Names"), response_id)
-        number_audio_path = find_audio_file(os.path.join(audio_folder, "Numbers"), response_id)
-        address_audio_path = find_audio_file(os.path.join(audio_folder, "Addresses"), response_id)
+        name_audio_path = find_audio_file(os.path.join(audio_folder, "Names"), file_name_id)
+        number_audio_path = find_audio_file(os.path.join(audio_folder, "Numbers"), file_name_id)
+        address_audio_path = find_audio_file(os.path.join(audio_folder, "Addresses"), file_name_id)
         
         # Only include data if all three audio files exist
         if name_audio_path and number_audio_path and address_audio_path:
-            data["response_id"].append(response_id)
+            data["file_name_id"].append(file_name_id)
             data["audio"].append({
                 "name_audio": name_audio_path,
                 "number_audio": number_audio_path,
