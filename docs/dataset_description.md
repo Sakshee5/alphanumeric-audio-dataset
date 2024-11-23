@@ -38,4 +38,16 @@ The dataset is crucial for:
 - Supporting the development of more inclusive technologies.
 
 ## 4. How to Access the Data
-To access the dataset, you can download it from ........
+You can access the Alphanumeric Audio Dataset in two ways:
+
+1. Hugging Face (Recommended):
+
+To directly load the dataset into your project using the Hugging Face datasets library, use the following Python code:
+```
+from datasets import load_dataset
+
+dataset = load_dataset("sakshee05/alphanumeric-audio-dataset")
+```
+
+2. Github
+Access at [alphanumeric-audio-dataset](https://github.com/Sakshee5/alphanumeric-audio-dataset)

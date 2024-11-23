@@ -1,6 +1,6 @@
 # Speech Recognition Bias Reduction Project
 
-## Overview
+## Executive Summary
 Welcome to the Speech Recognition Bias Reduction Project. It aims to create a more inclusive and representative dataset for improving automated speech recognition systems. This project addresses the challenges faced by speakers with non-native English accents, particularly when interacting with automated voice systems that struggle to interpret alphanumeric information such as names, phone numbers, and addresses.
 
 Motivated by my personal experience as an international student moving to the United States in 2024, I aim to reduce delays, misinterpretations, and ineffective communication caused by accent-based biases in current voice recognition technologies.
@@ -90,7 +90,7 @@ For any questions or further information, please contact:
 Email: [sakshee.patil@duke.edu](mailto:sakshee.patil@duke.edu)
 
 
-** Few Section of the README are re-articulated using ChatGPT.
+** Few Sections of the README are re-articulated using ChatGPT.
 
 
 
