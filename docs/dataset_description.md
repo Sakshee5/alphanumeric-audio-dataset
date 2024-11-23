@@ -3,12 +3,14 @@
 This document provides a detailed description of the dataset's contents, structure, and the significance of each component.
 
 ## 1. Audio Recordings
-The dataset includes audio recordings of participants spelling out a randomized full name, a phone number, and an address. Each participant's audio files are stored in separate folders under the `audio/` directory.
+The dataset includes audio recordings of participants spelling out a randomized full name, a phone number, and an address. Each participant's audio files are stored in separate folders under the `audio_data/` directory.
 
 ### Audio Files Naming Convention
-- `name_spellout.wav`: Audio of the participant spelling out their randomized name letter by letter.
-- `phone_number.wav`: Audio of the participant reading out their randomized phone number digit by digit.
-- `address.wav`: Audio of the participant stating their randomized address clearly.
+- `audio_data/Names`: Audio of participants spelling out a randomized name letter by letter.
+- `audio_data/Numbers`: Audio of participants reading out a randomized phone number digit by digit.
+- `audio_data/Addresses`: Audio of participants stating randomized address clearly.
+
+The folders contain raw audio files in multiple formats, such as .wav, .mp3, and .m4a. Each participant is assigned a unique Response_ID, which corresponds to three specific file names in the above folders. The ground truth data, including participant names, phone numbers, and addresses, is stored in the metadata.csv file.
 
 ## 2. Metadata
 The accompanying metadata file `metadata.csv` contains essential information about each participant. The columns in the metadata file include:
