@@ -2,20 +2,6 @@ import os
 import pandas as pd
 from datasets import Dataset, Audio
 
-# Define supported audio file extensions
-SUPPORTED_EXTENSIONS = [".wav", ".mp3", ".m4a"]
-
-def find_audio_file(folder, file_name_id):
-    """
-    Finds the audio file in the specified folder for a given response ID, 
-    checking all supported extensions.
-    """
-    for ext in SUPPORTED_EXTENSIONS:
-        audio_path = os.path.join(folder, f"{file_name_id}{ext}")
-        if os.path.exists(audio_path):
-            return audio_path
-    return None
-
 def load_metadata(metadata_path):
     """Load the metadata CSV file."""
     return pd.read_csv(metadata_path)
@@ -38,17 +24,20 @@ def generate_dataset_dict(metadata, audio_folder):
         "recording_machine": [],
     }
     
-    for _, row in metadata.iterrows():
-        file_name_id = row["file_name"]
+    for id in metadata['Response_ID'].unique():
+
+        df_subset = metadata[metadata['Response_ID']==id]
         
         # Collect audio paths for different categories
-        name_audio_path = find_audio_file(os.path.join(audio_folder, "Names"), file_name_id)
-        number_audio_path = find_audio_file(os.path.join(audio_folder, "Numbers"), file_name_id)
-        address_audio_path = find_audio_file(os.path.join(audio_folder, "Addresses"), file_name_id)
+        name_audio_path = df_subset['file_name'].iloc[0]
+        number_audio_path = df_subset['file_name'].iloc[2]
+        address_audio_path = df_subset['file_name'].iloc[1]
         
+        row = df_subset.iloc[0]
+
         # Only include data if all three audio files exist
         if name_audio_path and number_audio_path and address_audio_path:
-            data["file_name_id"].append(file_name_id)
+            data["file_name_id"].append(id)
             data["audio"].append({
                 "name_audio": name_audio_path,
                 "number_audio": number_audio_path,
