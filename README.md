@@ -75,6 +75,9 @@ The Alphanumeric Audio Dataset was collected with strict adherence to ethical gu
 4. **Voluntary Participation:** Participation was voluntary, and participants could withdraw their data before public release.
 5. **Responsible Use:** The dataset is open-sourced to promote inclusivity in AI research and must be used for ethical, non-discriminatory purposes.
 
+## About the Dataset
+Dataset has been hosted on : https://huggingface.co/datasets/sakshee05/alphanumeric-audio-dataset
+
 
 ## License
 
